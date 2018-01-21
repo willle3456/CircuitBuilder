@@ -57,7 +57,7 @@ public class NetBuilder {
         }
     }
     public static void startNet() throws IOException {
-        writer = new PrintWriter("./src/Output2.net");
+        writer = new PrintWriter("./SchematicBuilder/src/Output2.net");
         //writer.println("* /Users/sean/Desktop/Q2.asc");
     }
     public static void endNet() {

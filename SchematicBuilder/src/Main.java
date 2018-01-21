@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws Exception {
-        Scanner fileScanner = createScanner("./src/tempData.txt");
+        Scanner fileScanner = createScanner("./SchematicBuilder/src/tempData.txt");
         //String inputText = getScannerText(fileScanner);
         //StackBuilder nmos = new StackBuilder(inputText);
         NetBuilder.startNet();

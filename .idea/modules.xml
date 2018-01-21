@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CircuitBuilder.iml" filepath="$PROJECT_DIR$/CircuitBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CircuitBuilder.iml" filepath="$PROJECT_DIR$/.idea/CircuitBuilder.iml" />
     </modules>
   </component>
 </project>

@@ -9,7 +9,7 @@ public class SchBuilder {
     static int MOSCount = 0;
     static PrintWriter writer;
     public static void writePullDownNetwork() throws FileNotFoundException {
-        Scanner scan = new Scanner(new File("./src/Output2.net"));
+        Scanner scan = new Scanner(new File("./SchematicBuilder/src/Output2.net"));
         while (scan.hasNextLine()) {
             String currentLine = scan.nextLine();
             Scanner lineScanner = new Scanner(currentLine);
@@ -59,13 +59,13 @@ public class SchBuilder {
     }
 
     public static void startSch() throws IOException {
-        writer = new PrintWriter("./src/Output2.asc");
+        writer = new PrintWriter("./SchematicBuilder/src/Output2.asc");
         writer.println("VERSION 4");
         writer.println("SHEET 1 960 720\n");
     }
     public static void endSch() throws IOException{
         writer.close();
-        File file = new File("./src/Output2.asc");
+        File file = new File("./SchematicBuilder/src/Output2.asc");
         Desktop desktop = Desktop.getDesktop();
         desktop.open(file);
     }
