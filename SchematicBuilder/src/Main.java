@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws Exception {
         // Interpret Master Equation
+        initializations();
         Scanner masterScanner = createScanner("./SchematicBuilder/src/MasterEquation.txt");
         String masterEquation = masterScanner.nextLine();
         String simplifiedNMOS = ConnectionBuilder.AlgebraToNMOS(masterEquation);
@@ -16,7 +17,6 @@ public class Main {
 
         Scanner fileScannerNMOS = createScanner("./SchematicBuilder/src/internalNMOSConnections.txt");
         Scanner fileScannerPMOS = createScanner("./SchematicBuilder/src/internalPMOSConnections.txt");
-        //String inputText = getScannerText(fileScanner);
         //StackBuilder nmos = new StackBuilder(inputText);
         NetBuilder.startNet();
         while (fileScannerNMOS.hasNextLine()) {
@@ -29,8 +29,7 @@ public class Main {
         }
         NetBuilder.endNet();
         SchBuilder.startSch();
-        //SchBuilder.writePullUpNetwork();
-        SchBuilder.writePullDownNetwork();
+        SchBuilder.writeCMOSNetwork();
         SchBuilder.endSch();
         closeProgram();
     }
@@ -62,7 +61,6 @@ public class Main {
 
     static void buildCluster(StackBuilder stack, Node prevNode, Node curNode, ArrayList<Node> botRail) {
         if (stack.getLevel() == 0) { // getLevel is controlled by StackBuilder pops - includes check for empty stack
-            //prevNode.nextClusterFromNode(curNode);
             curNode.pointNextCluster(botRail);
             return;
         }
@@ -70,44 +68,7 @@ public class Main {
         buildCluster(stack, prevNode, curNode, botRail);
     }
 
-    /*
-    static void buildCluster(StackBuilder stack, Node prevNode, Node curNode, ArrayList<Node> botRail) {
-        if (stack.getLevel() == 0) { // getLevel is controlled by StackBuilder pops - includes check for empty stack
-            prevNode.nextClusterFromNode(curNode);
-            curNode.pointNextCluster(botRail);
-            return;
-        }
-        String currentInput = stack.pop();
-        //System.out.println("-" + currentInput + "-");
-        if (currentInput.equals("*")) {
-            prevNode.nextClusterFromNode(curNode);
-            buildCluster(stack, prevNode, curNode, botRail);
-        }
-        else if (currentInput.equals("+")) {
-            // If the cluster does not exist, create it
-            if (!prevNode.hasNextCluster()) {
-                prevNode.nextClusterFromNode(curNode);
-            }
-            // Add node to the cluster
-            else {
-               prevNode.getNextCluster().add(curNode);
-            }
-            // Connect newNode to botRail
-            buildCluster(stack, curNode, curNode, botRail);
-        }
-        else if (currentInput.equals("@")) {
-            curNode.pointNextCluster(botRail);
-        }
-        else {
-            Node newNode = new Node(currentInput);
-            if (stack.isSeries()) {
-            }
-            buildCluster(stack, curNode, newNode, botRail);
-        }
-    }
-    */
-
-    static void parseInputText(String inputText) {
+   static void parseInputText(String inputText) {
         // Text Parsing
         StackBuilder nmos = new StackBuilder(inputText);
         int strLength = inputText.length();
@@ -141,15 +102,7 @@ public class Main {
     }
 
     static Scanner createScanner(String filePath) throws Exception {
-        initializations();
         return new Scanner(new File(filePath));
-    }
-
-    static String getScannerText(Scanner fileScanner) {
-        if (fileScanner.hasNextLine()) {
-            return fileScanner.nextLine();
-        }
-        return null;
     }
 
     static void initializations() {

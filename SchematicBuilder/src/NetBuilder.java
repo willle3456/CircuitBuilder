@@ -101,14 +101,8 @@ public class NetBuilder {
     }
     public static void startNet() throws IOException {
         writer = new PrintWriter("./SchematicBuilder/src/Output2.net");
-        //writer.println("* /Users/sean/Desktop/Q2.asc");
     }
     public static void endNet() {
-        /*
-        writer.println(".lib /Users/sean/Library/Application Support/LTspice/lib/cmp/standard.mos");
-        writer.println(".backanno");
-        writer.println(".end");
-        */
         writer.close();
     }
 }
