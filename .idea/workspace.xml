@@ -2,26 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a05c05f-c3d8-4d97-b196-25cfb49ac502" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/SchematicBuilder/src/internalNMOSConnections.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SchematicBuilder/src/internalPMOSConnections.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/LTSpiceSchematic.asc" afterPath="$PROJECT_DIR$/LTSpiceSchematic.asc" />
-      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/.idea/workspace.xml" afterPath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/LTSpiceSchematic.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/LTSpiceSchematic.net" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/LTSpiceSchematic.op.raw" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/LTSpiceSchematic.raw" afterPath="" />
       <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/LTSpiceSchematic.asc" afterPath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/LTSpiceSchematic.asc" />
-      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/Main.class" afterPath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/Main.class" />
+      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/LTSpiceSchematic.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/LTSpiceSchematic.net" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/LTSpiceSchematic.op.raw" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/LTSpiceSchematic.raw" afterPath="" />
       <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/NetBuilder.class" afterPath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/NetBuilder.class" />
       <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/Output2.net" afterPath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/Output2.net" />
-      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/SchBuilder.class" afterPath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/SchBuilder.class" />
-      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/SchematicBuilder/src/LTSpiceSchematic.asc" afterPath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/SchematicBuilder/src/LTSpiceSchematic.asc" />
       <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/SchematicBuilder/src/Output2.net" afterPath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/SchematicBuilder/src/Output2.net" />
-      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/SchematicBuilder/src/internalConnections.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/internalConnections.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SchematicBuilder/src/LTSpiceSchematic.asc" afterPath="$PROJECT_DIR$/SchematicBuilder/src/LTSpiceSchematic.asc" />
-      <change beforePath="$PROJECT_DIR$/SchematicBuilder/src/Main.java" afterPath="$PROJECT_DIR$/SchematicBuilder/src/Main.java" />
+      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/SchematicBuilder/src/internalNMOSConnections.txt" afterPath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/SchematicBuilder/src/internalNMOSConnections.txt" />
+      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/SchematicBuilder/src/internalPMOSConnections.txt" afterPath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/SchematicBuilder/src/internalPMOSConnections.txt" />
+      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/internalNMOSConnections.txt" afterPath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/internalNMOSConnections.txt" />
+      <change beforePath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/internalPMOSConnections.txt" afterPath="$PROJECT_DIR$/SchematicBuilder/out/production/CircuitBuilder/internalPMOSConnections.txt" />
       <change beforePath="$PROJECT_DIR$/SchematicBuilder/src/NetBuilder.java" afterPath="$PROJECT_DIR$/SchematicBuilder/src/NetBuilder.java" />
       <change beforePath="$PROJECT_DIR$/SchematicBuilder/src/Output2.net" afterPath="$PROJECT_DIR$/SchematicBuilder/src/Output2.net" />
       <change beforePath="$PROJECT_DIR$/SchematicBuilder/src/SchBuilder.java" afterPath="$PROJECT_DIR$/SchematicBuilder/src/SchBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/SchematicBuilder/src/internalConnections.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/SchematicBuilder/src/internalNMOSConnections.txt" afterPath="$PROJECT_DIR$/SchematicBuilder/src/internalNMOSConnections.txt" />
+      <change beforePath="$PROJECT_DIR$/SchematicBuilder/src/internalPMOSConnections.txt" afterPath="$PROJECT_DIR$/SchematicBuilder/src/internalPMOSConnections.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +38,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="105">
+              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4742#4743#0" expanded="true" />
@@ -53,8 +56,8 @@
       <file leaf-file-name="SchBuilder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/SchBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="61" column="44" lean-forward="true" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
+            <state relative-caret-position="223">
+              <caret line="70" column="49" lean-forward="false" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#498#506#0" expanded="true" />
@@ -66,8 +69,8 @@
       <file leaf-file-name="LTSpiceSchematic.asc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LTSpiceSchematic.asc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="45" column="7" lean-forward="false" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -76,8 +79,8 @@
       <file leaf-file-name="NetBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/NetBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="82" column="53" lean-forward="false" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+            <state relative-caret-position="-829">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,31 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PSpiceNetlist.net" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/PSpiceNetlist.net">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LTSpiceSchematic.asc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/LTSpiceSchematic.asc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="internalNMOSConnections.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/internalNMOSConnections.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -118,8 +101,8 @@
       <file leaf-file-name="internalPMOSConnections.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/internalPMOSConnections.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -128,8 +111,8 @@
       <file leaf-file-name="Output2.net" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/Output2.net">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+            <state relative-caret-position="45">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,11 +137,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/SchematicBuilder/src/internalConnections.txt" />
-        <option value="$PROJECT_DIR$/SchematicBuilder/src/internalPMOSConnections.txt" />
         <option value="$PROJECT_DIR$/SchematicBuilder/src/Main.java" />
-        <option value="$PROJECT_DIR$/SchematicBuilder/src/NetBuilder.java" />
         <option value="$PROJECT_DIR$/SchematicBuilder/src/LTSpiceSchematic.asc" />
         <option value="$PROJECT_DIR$/LTSpiceSchematic.asc" />
+        <option value="$PROJECT_DIR$/SchematicBuilder/src/internalPMOSConnections.txt" />
+        <option value="$PROJECT_DIR$/SchematicBuilder/src/internalNMOSConnections.txt" />
+        <option value="$PROJECT_DIR$/SchematicBuilder/src/NetBuilder.java" />
         <option value="$PROJECT_DIR$/SchematicBuilder/src/SchBuilder.java" />
       </list>
     </option>
@@ -170,7 +154,6 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="640" />
     <option name="y" value="23" />
     <option name="width" value="640" />
     <option name="height" value="777" />
@@ -358,15 +341,15 @@
       <workItem from="1516505707350" duration="552000" />
       <workItem from="1516506305230" duration="875000" />
       <workItem from="1516507202842" duration="6072000" />
-      <workItem from="1516514367850" duration="5049000" />
+      <workItem from="1516514367850" duration="7023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12614000" />
+    <option name="totallyTimeSpent" value="14588000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="640" y="23" width="640" height="777" extended-state="0" />
+    <frame x="0" y="23" width="640" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -524,46 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4742#4743#0" expanded="true" />
-            <element signature="e#4786#4787#0" expanded="true" />
-            <element signature="e#5152#5153#0" expanded="true" />
-            <element signature="e#5220#5221#0" expanded="true" />
-            <element signature="e#5253#5254#0" expanded="true" />
-            <element signature="e#5321#5322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/Output2.net">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/internalPMOSConnections.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/internalNMOSConnections.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/LTSpiceSchematic.asc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -580,10 +523,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/NetBuilder.java">
+    <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4742#4743#0" expanded="true" />
+            <element signature="e#4786#4787#0" expanded="true" />
+            <element signature="e#5152#5153#0" expanded="true" />
+            <element signature="e#5220#5221#0" expanded="true" />
+            <element signature="e#5253#5254#0" expanded="true" />
+            <element signature="e#5321#5322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/Output2.net">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/internalPMOSConnections.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="82" column="53" lean-forward="false" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/internalNMOSConnections.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/NetBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-829">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -592,16 +575,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LTSpiceSchematic.asc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="45" column="7" lean-forward="false" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SchematicBuilder/src/SchBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="61" column="44" lean-forward="true" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
+        <state relative-caret-position="223">
+          <caret line="70" column="49" lean-forward="false" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#498#506#0" expanded="true" />

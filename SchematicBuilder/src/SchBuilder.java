@@ -68,7 +68,7 @@ public class SchBuilder {
         writer.println("FLAG " + flag3Coords()[0] + " " + flag3Coords()[1] + " 0");
         writer.println("SYMBOL voltage " + flag1Coords()[0] + " " + flag1Coords()[1] + " R0");
         writer.println("SYMATTR InstName Vdd");
-        writer.println("SYMATTR Value PULSE(0 10 6m 0 0 3m)");
+        writer.println("SYMATTR Value PULSE(0 10 4m 0 0 3m)");
         incrementMOSCount();
         writer.println("TEXT " + flag1Coords()[0] + " " + flag1Coords()[1] + " Left 2 !.tran 10m");
     }

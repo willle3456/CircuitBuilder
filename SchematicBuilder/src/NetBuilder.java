@@ -15,10 +15,10 @@ public class NetBuilder {
         }
         else if (line.length() > 3) {
             writer.print("MOS" + NMOSCount + " ");
-            expandCharacter(writer, line, 2, false);
+            expandCharacter(writer, line, 0, false);
             expandCharacter(writer, line, 1, false);
-            writer.print("" + line.charAt(1) + "" + line.charAt(0) + " ");
-            writer.print("" + line.charAt(1) + "" + line.charAt(0) + " ");
+            writer.print("" + line.charAt(1) + "" + line.charAt(2) + " ");
+            writer.print("" + line.charAt(1) + "" + line.charAt(2) + " ");
             writer.print("PMOS \r\n");
             writePMOSChain(line.substring(1, line.length()));
         }
@@ -27,18 +27,18 @@ public class NetBuilder {
     public static void writePMOSChain(String line) throws IOException {
         writer.print("MOS" + NMOSCount + " ");
         if (line.length() == 3) {
-            writer.print("" + line.charAt(2) + "" + line.charAt(1) + " ");
+            writer.print("" + line.charAt(0) + "" + line.charAt(1) + " ");
             writer.print("" + line.charAt(1) + " ");
-            expandCharacter(writer, line, 0, false);
-            expandCharacter(writer, line, 0, false);
+            expandCharacter(writer, line, 2, false);
+            expandCharacter(writer, line, 2, false);
             writer.print("PMOS \r\n");
             NMOSCount++;
         }
         else if (line.length() > 3) {
-            writer.print("" + line.charAt(2) + "" + line.charAt(1) + " ");
+            writer.print("" + line.charAt(0) + "" + line.charAt(1) + " ");
             writer.print("" + line.charAt(1) + " ");
-            writer.print("" + line.charAt(1) + "" + line.charAt(0) + " ");
-            writer.print("" + line.charAt(1) + "" + line.charAt(0) + " ");
+            writer.print("" + line.charAt(1) + "" + line.charAt(2) + " ");
+            writer.print("" + line.charAt(1) + "" + line.charAt(2) + " ");
             writer.print("PMOS \r\n");
             NMOSCount++;
             writePMOSChain(line.substring(1, line.length()));
@@ -90,11 +90,9 @@ public class NetBuilder {
         switch(line.charAt(index)) {
             case 'v':
                 writer.print(NMOS ? "Vout " : "Vdd " );
-                //writer.print("Vdd ");
                 break;
             case 'g':
                 writer.print(NMOS ? "GND " : "Vout " );
-                //writer.print("GND ");
                 break;
             default:
                 writer.print(line.charAt(index) + " ");

@@ -1,1 +1,3 @@
-vABCg
+vAg
+vBg
+vCg
