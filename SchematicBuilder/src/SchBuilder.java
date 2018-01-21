@@ -10,8 +10,7 @@ public class SchBuilder {
     static int MOSCount = 0;
     static int permanentMOSCount = 0;
     static int yCoordDefault = -144;
-    static int xCoordDefault = -16;
-    static int columns = 6;
+    static int columns = 14;
     static int rows = 1;
     static PrintWriter writer;
     static ArrayList<String> voltageSources = new ArrayList<String>();
@@ -24,7 +23,7 @@ public class SchBuilder {
             rows+=200;
         }
     }
-    public static void writePullDownNetwork() throws FileNotFoundException {
+    public static void writeCMOSNetwork() throws FileNotFoundException {
         Scanner scan = new Scanner(new File("./SchematicBuilder/src/Output2.net"));
         while (scan.hasNextLine()) {
             String currentLine = scan.nextLine();
@@ -35,18 +34,21 @@ public class SchBuilder {
                     componentValues[i] = lineScanner.next();
                 }
             }
-            writer.println("SYMBOL " + componentValues[5] + " " + symCoords()[0] + " " + symCoords()[1] + " R0");
-            writer.println("SYMATTR InstName MOS" + permanentMOSCount);
-            writer.println("SYMATTR Value " + componentValues[5]);
-            writer.println("FLAG " + flag1Coords()[0] + " " + flag1Coords()[1] + " " + componentValues[1]);
-            writer.println("FLAG " + flag2Coords()[0] + " " + flag2Coords()[1] + " " + componentValues[2]);
-            writer.println("FLAG " + flag3Coords()[0] + " " + flag3Coords()[1] + " " + componentValues[3]);
-            writer.println();
-            incrementMOSCount();
+            addGenericMOS(componentValues);
             checkVoltageSource(componentValues[2]);
-            //MOSCount++;
         }
         addVoltageSources();
+    }
+
+    public static void addGenericMOS(String[] componentValues) {
+        writer.println("SYMBOL " + componentValues[5] + " " + symCoords()[0] + " " + symCoords()[1] + " R0");
+        writer.println("SYMATTR InstName MOS" + permanentMOSCount);
+        writer.println("SYMATTR Value " + componentValues[5]);
+        writer.println("FLAG " + flag1Coords()[0] + " " + flag1Coords()[1] + " " + componentValues[1]);
+        writer.println("FLAG " + flag2Coords()[0] + " " + flag2Coords()[1] + " " + componentValues[2]);
+        writer.println("FLAG " + flag3Coords()[0] + " " + flag3Coords()[1] + " " + componentValues[3]);
+        writer.println();
+        incrementMOSCount();
     }
 
     public static void checkVoltageSource(String candidate) {
@@ -64,6 +66,10 @@ public class SchBuilder {
             writer.println("SYMATTR Value 10");
             incrementMOSCount();
         }
+        addStaticSourcePulse();
+    }
+
+    public static void addStaticSourcePulse() {
         writer.println("FLAG " + flag4Coords()[0] + " " + flag4Coords()[1] + " Vdd");
         writer.println("FLAG " + flag3Coords()[0] + " " + flag3Coords()[1] + " 0");
         writer.println("SYMBOL voltage " + flag1Coords()[0] + " " + flag1Coords()[1] + " R0");
@@ -77,7 +83,6 @@ public class SchBuilder {
        int[] cords = new int[2];
        cords[0] = -16+192*MOSCount;
        cords[1] = -144+rows;
-       //cords[1] = yCoordDefault;
        return cords;
     }
 
@@ -85,7 +90,6 @@ public class SchBuilder {
         int[] cords = new int[2];
         cords[0] = 32+192*MOSCount;
         cords[1] = -144+rows;
-        //cords[1] = yCoordDefault;
         return cords;
     }
 
@@ -93,8 +97,6 @@ public class SchBuilder {
         int[] cords = new int[2];
         cords[0] = -16+192*MOSCount;
         cords[1] = -64+rows;
-        //cords[1] = yCoordDefault/2;
-        //cords[1] = 64 + yCoordDefault;
         return cords;
     }
 
@@ -102,7 +104,6 @@ public class SchBuilder {
         int[] cords = new int[2];
         cords[0] = 32+192*MOSCount;
         cords[1] = -48+rows;
-        //cords[1] = 48 + yCoordDefault;
         return cords;
     }
 
@@ -110,7 +111,6 @@ public class SchBuilder {
         int[] cords = new int[2];
         cords[0] = 32+192*MOSCount;
         cords[1] = -128+rows;
-        //cords[1] = 48 + yCoordDefault;
         return cords;
     }
 
