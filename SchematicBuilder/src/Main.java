@@ -3,6 +3,17 @@ import java.io.File;
 import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws Exception {
+        // Interpret Master Equation
+        Scanner masterScanner = createScanner("./SchematicBuilder/src/MasterEquation.txt");
+        String masterEquation = masterScanner.nextLine();
+        String simplifiedNMOS = ConnectionBuilder.AlgebraToNMOS(masterEquation);
+        String simplifiedPMOS = ConnectionBuilder.AlgebraToPMOS(masterEquation);
+
+        // Write MOSFET Internal Representation Files
+        InternalTransistorRepresentation.writeInternalNMOSFile(simplifiedNMOS);
+        InternalTransistorRepresentation.writeInternalPMOSFile(simplifiedPMOS);
+
+
         Scanner fileScannerNMOS = createScanner("./SchematicBuilder/src/internalNMOSConnections.txt");
         Scanner fileScannerPMOS = createScanner("./SchematicBuilder/src/internalPMOSConnections.txt");
         //String inputText = getScannerText(fileScanner);
