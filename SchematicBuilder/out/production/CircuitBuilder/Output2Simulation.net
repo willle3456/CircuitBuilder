@@ -1,0 +1,18 @@
+* /Users/sean/IdeaProjects/CircuitBuilder/src/Output2.asc
+MOS0 Vdd F 0 0 NMOS
+MOS1 Vdd A B B NMOS
+MOS2 A B C C NMOS
+MOS3 B C 0 0 NMOS
+MOS4 Vdd D 0 0 NMOS
+Vdd Vdd 0 10
+V1 A 0 5
+V2 B 0 5
+V3 C 0 PULSE(0 5 0 0 0 4m)
+V4 D 0 0
+V5 F 0 0
+.model NMOS NMOS
+.model PMOS PMOS
+.lib /Users/sean/Library/Application Support/LTspice/lib/cmp/standard.mos
+.tran 10m
+.backanno
+.end
