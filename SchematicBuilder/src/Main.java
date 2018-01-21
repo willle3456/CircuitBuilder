@@ -1,10 +1,9 @@
-import java.lang.reflect.Array;
 import java.util.Scanner;
 import java.io.File;
 import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws Exception {
-        Scanner fileScanner = createScanner("./SchematicBuilder/src/tempData.txt");
+        Scanner fileScanner = createScanner("./SchematicBuilder/src/internalConnections.txt");
         //String inputText = getScannerText(fileScanner);
         //StackBuilder nmos = new StackBuilder(inputText);
         NetBuilder.startNet();
@@ -12,7 +11,7 @@ public class Main {
             NetBuilder.writeNMOS(fileScanner.nextLine());
         }
         NetBuilder.endNet();
-        //constructPullDownNetwork(nmos);
+        //constructPullDownNetwork(nmos.idea);
         SchBuilder.startSch();
         SchBuilder.writePullDownNetwork();
         SchBuilder.endSch();

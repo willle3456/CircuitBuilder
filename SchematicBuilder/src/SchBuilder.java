@@ -59,13 +59,13 @@ public class SchBuilder {
     }
 
     public static void startSch() throws IOException {
-        writer = new PrintWriter("./SchematicBuilder/src/Output2.asc");
+        writer = new PrintWriter("LTSpiceSchematic.asc");
         writer.println("VERSION 4");
         writer.println("SHEET 1 960 720\n");
     }
     public static void endSch() throws IOException{
         writer.close();
-        File file = new File("./SchematicBuilder/src/Output2.asc");
+        File file = new File("LTSpiceSchematic.asc");
         Desktop desktop = Desktop.getDesktop();
         desktop.open(file);
     }
