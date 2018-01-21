@@ -3,16 +3,33 @@ import java.io.File;
 import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws Exception {
-        Scanner fileScanner = createScanner("./SchematicBuilder/src/internalConnections.txt");
+        // Interpret Master Equation
+        Scanner masterScanner = createScanner("./SchematicBuilder/src/MasterEquation.txt");
+        String masterEquation = masterScanner.nextLine();
+        String simplifiedNMOS = ConnectionBuilder.AlgebraToNMOS(masterEquation);
+        String simplifiedPMOS = ConnectionBuilder.AlgebraToPMOS(masterEquation);
+
+        // Write MOSFET Internal Representation Files
+        InternalTransistorRepresentation.writeInternalNMOSFile(simplifiedNMOS);
+        InternalTransistorRepresentation.writeInternalPMOSFile(simplifiedPMOS);
+
+
+        Scanner fileScannerNMOS = createScanner("./SchematicBuilder/src/internalNMOSConnections.txt");
+        Scanner fileScannerPMOS = createScanner("./SchematicBuilder/src/internalPMOSConnections.txt");
         //String inputText = getScannerText(fileScanner);
         //StackBuilder nmos = new StackBuilder(inputText);
         NetBuilder.startNet();
-        while (fileScanner.hasNextLine()) {
-            NetBuilder.writeNMOS(fileScanner.nextLine());
+        while (fileScannerNMOS.hasNextLine()) {
+            String lineChain = fileScannerNMOS.nextLine();
+            NetBuilder.writeNMOS(lineChain);
+        }
+        while (fileScannerPMOS.hasNextLine()) {
+            String lineChain = fileScannerPMOS.nextLine();
+            NetBuilder.writePMOS(lineChain);
         }
         NetBuilder.endNet();
-        //constructPullDownNetwork(nmos.idea);
         SchBuilder.startSch();
+        //SchBuilder.writePullUpNetwork();
         SchBuilder.writePullDownNetwork();
         SchBuilder.endSch();
         closeProgram();
@@ -117,7 +134,6 @@ public class Main {
 
     static boolean shouldPop(int strLength, int index, char currentInput) {
         return (currentInput == '+' || index == strLength - 1);
-
     }
 
     static boolean shouldAdd(char currentInput) {
